@@ -1,3 +1,25 @@
-<p>
-  customer-search works!
-</p>
+<h3>
+  Customer List
+</h3>
+
+<table>
+    <thead>
+      <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>
+            <!-- <a routerLink="new">New</a> -->
+          </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of list">
+        <td>{{c.firstname}}</td>
+        <td>{{c.lastname}}</td>
+        <td>
+           <!-- <a routerLink="edit/{{c.firstname}}/{{c.lastname}}">Edit</a> -->
+        </td>
+      </tr>
+    </tbody>
+</table>
+            
